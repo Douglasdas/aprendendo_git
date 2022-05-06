@@ -1,30 +1,27 @@
-Criando pastas no diretório:
+Criando pastas no diretÃ³rio:
 mkdir teste
 Entrar na pasta: 
 cd teste
 
 Iniciando os trabalhos:
 git init
-Criando aruivos:
+Criando arquivos:
 Touch Comandos.txt
-Verificar as modificações:
+Verificar as modificaÃ§Ãµes:
 git status 
 Precisa dar um git add Comandos.txt
 Lista com arquivos para serem ignorados:
 Arquivo .gitignore criado e oculto
 Adicionar todos os arquivos:
 git add .
-Salvar as modificações:
-git commit -m ''comentário sobre a modificação''
-Verificar as alterações nos arquivos
+Salvar as modificaÃ§Ãµes:
+git commit -m ''comentÃ¡rio sobre a modificaÃ§Ã£o''
+Verificar as alteraÃ§Ãµes nos arquivos
 git diff
-Verificar histórico das modificações:
+Verificar histÃ³rico das modificaÃ§Ãµes:
 git log
-Criar "tags" em pontos específicos de grande mudança:
+Criar "tags" em pontos especÃ­ficos de grande mudanÃ§a:
 git tag -a vX.X
-
-
-
 
 git branch
 touch exemplo.html
@@ -36,6 +33,8 @@ git clone url
 git push origin master
 
 
+
+ConfiguraÃ§Ãµes do GIT 
 echo "# Academy_exemplo" >> README.md
 git init
 git add README.md
@@ -44,7 +43,7 @@ git branch -M main
 git remote add origin https://github.com/Douglasdas/Academy_exemplo.git
 git push -u origin main
 
-…or push an existing repository from the command line
+â€¦or push an existing repository from the command line
 git remote add origin https://github.com/Douglasdas/Academy_exemplo.git
 git branch -M main
 git push -u origin main
