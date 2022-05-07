@@ -1,12 +1,12 @@
-Criando pastas no diretório:
-mkdir teste
+﻿Criando pastas no diretório:
+mkdir [teste]
 Entrar na pasta: 
 cd teste
 
 Iniciando os trabalhos:
-git init
-Criando arquivos:
-Touch Comandos.txt
+git init (insere pasta oculta .git)
+Criando arquivos na pasta:
+touch [Comandos.txt] (exemplo de arquivo)
 Verificar as modificações:
 git status 
 Precisa dar um git add Comandos.txt
@@ -14,38 +14,65 @@ Lista com arquivos para serem ignorados:
 Arquivo .gitignore criado e oculto
 Adicionar todos os arquivos:
 git add .
-Salvar as modificações:
-git commit -m ''comentário sobre a modificação''
+Salvar as modificações e insere informações como data, autor, etc:
+git commit -m ''[comentário sobre a modificação]''
 Verificar as alterações nos arquivos
 git diff
 Verificar histórico das modificações:
 git log
-Criar "tags" em pontos específicos de grande mudança:
-git tag -a vX.X
+Criar "tags" (rótulos) em pontos específicos de grande mudança: 
+git tag -a "[vX.X]" (exemplo)
+Criar branch:
+git branch [nome do arquivo] ou
+git checkout -b [nome do arquivo]
+Para mudar de branch
+git chekout "main" (branch de destino)
+Excluir branch:
+git branch -d [nome do arquivo]
+Atualização do repositório local com o online
+git pull [nome do repositório]
+Atualização do repositório online com o local
+git push [nome do repositório]
+Enviando branch para o repositório
+git push origin [nome da branch]
 
+
+Verificação de códigos para análise de outros desenvolvedores: pull request através do ambiente web
+
+
+
+Exemplo de outros comandos básicos 
 git branch
-touch exemplo.html
+touch [exemplo.html]
 git status
 git add .
-git commit -m "xxxxxxx"
-git punch origin master
-git clone url
+git commit -m "[xxxxxxx]"
 git push origin master
+Clone - como uma branch de um repositório online em um "local".
+git clone "url do repositório" (uma pasta será criada)
+git push origin master
+Merge - Mesclar (unir) duas branches, geralmente na "master"
+na branche de destino digite: git merge [branche a unir]
 
 
 
-Configurações do GIT 
-echo "# Academy_exemplo" >> README.md
-git init
-git add README.md
-git commit -m "primeiro commit"
-git branch -M main
-git remote add origin https://github.com/Douglasdas/Academy_exemplo.git
-git push -u origin main
+Criando site estático em um repositório no GitHub:
+No gitHub no navegador (online), em settings, procurar GitHub Pages e escolher uma branch
+Depois criar pequeno arquivo html com corpo e cabeçalho
+git add .
+git commit -m "[pagina_web]"
+git push origin master
+Depois abrir no GitHub Pages no navegador
 
-…or push an existing repository from the command line
-git remote add origin https://github.com/Douglasdas/Academy_exemplo.git
-git branch -M main
-git push -u origin main
+
+
+
+
+
+
+
+
+
+
 
 
